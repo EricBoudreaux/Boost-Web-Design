@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.hero-header{
+    font-family: 'Merriweather';
+    font-weight: 400;
+}
+.navbar-toggler{
+    border: none;
+    outline: none;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover {
+    color: #0269e3
+}
+.btn {  
+    background: #0269e3;
+    padding: 14px 20px;
+    font-size: 14.5px
+}
+.hero-btn {
+    font-size: 16px;
+    padding: 16px 22px;
+}
+.price-btn-1{
+    background: white;
+    color: #0269e3;
+    padding: 15px 0px;
+    width: 40%;
+}
+.price-btn-2{
+    background: #0269e3;
+    color: white;
+    padding: 15px 0px;
+    width: 40%;
+}
+.documentation {
+    border-bottom: solid 3px #0269e3;
+
+    height: 50px
+}
+.demo-img-responsive {
+    width: 100%;
+    height: auto;
+}
+.demo-card {
+    box-shadow: grey -1px 1px 20px;
+
+}
+.demo-card:hover {
+    animation-name: rise;
+    animation-iteration-count: 1;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rise {
+    from {
+        position: relative;
+        bottom: 0px;        
+    }
+    to {
+        position: relative;
+        bottom: 5px;
+        box-shadow: grey -1px 1px 30px 5px;
+    }
+}
+
+.feature-card {
+    box-shadow: grey -1px 1px 30px 5px;
+
+}
+.feature-bg {
+    height: 30px;
+    width: 30px;
+    background: lightgrey;
+    padding: 20px 20px;
+    border-radius: 50%;
+}
+.hero-img-responsive {
+    width: 90%;
+    height: auto;
+}
+.feature-img-responsive {
+    width: 100%;
+    height: auto;
+}
+.divider {
+    color: #0559bd;
+    width: 10%;
+    border: solid 1px #0559bd
+}
+.accordion{
+    width: 90%;
+}
+@media only screen and (min-width: 767px) {
+    .accordion{
+        width: 60%;
+    }
+  }
